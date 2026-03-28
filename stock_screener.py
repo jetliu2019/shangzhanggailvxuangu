@@ -545,7 +545,7 @@ def main():
 
     today_str = datetime.datetime.now().strftime('%m/%d')
     count = len(selected)
-    title = f"📈 {today_str} 选股报告 | 发现{count}只潜力股"
+    title = f"📈 大概率上涨选股报告 | 发现{count}只潜力股 {today_str}"
 
     notifier = PushPlusNotifier(PUSHPLUS_TOKEN)
     notifier.send(title, html_report)
